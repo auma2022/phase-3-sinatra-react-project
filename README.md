@@ -20,10 +20,9 @@ by a separate **React frontend** that interacts with the database via the API.
 For this project, you must:
 
 - Use Active Record to interact with a database.
-- Have at least two models with a one-to-many relationship.
-- At a minimum, set up the following API routes in Sinatra:
-  - create and read actions for both models
-  - full CRUD capability for one of the models
+- Have a minimum of two models with a one-to-many relationship.
+- Create API routes in Sinatra that handles at least three different CRUD
+  actions for at least one of your Active Record models.
 - Build a separate React frontend application that interacts with the API to
   perform CRUD actions.
 - Use good OO design patterns. You should have separate classes for each of your
@@ -48,11 +47,6 @@ This repository has all the starter code needed to get a Sinatra backend up and
 running. [**Fork and clone**][fork link] this repository to get started. Then, run
 `bundle install` to install the gems.
 
-**Important**: Be sure you fork a copy of the repo into your GitHub account
-before cloning it. You can do this by using the link above or by clicking the
-"Octocat" button at the top of this page, then clicking "Fork" in the upper
-right corner of the repo page.
-
 [fork link]: https://github.com/learn-co-curriculum/phase-3-sinatra-react-project/fork
 
 The `app/controllers/application_controller.rb` file has an example GET route
@@ -72,7 +66,7 @@ This will run your server on port
 Your backend and your frontend should be in **two different repositories**.
 
 Create a new repository in a **separate folder** with a React app for your
-frontend. To do this, `cd` out of the backend project directory, and use
+frontend. `cd` out of the backend project directory, and use
 [create-react-app][] to generate the necessary code for your React frontend:
 
 ```console
@@ -122,3 +116,4 @@ fetch("http://localhost:9292/test")
 [dbdiagram.io]: https://dbdiagram.io/
 [postman download]: https://www.postman.com/downloads/
 [network tab]: https://developer.chrome.com/docs/devtools/network/
+# phase-3-sinatra-react-project
