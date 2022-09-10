@@ -18,10 +18,18 @@ Book.create(title: "The Outsiders", author: "SE Hinton", likes: 0)
 Book.create(title: "The Lord of the Rings", author: "JRR Tolkien", likes: 0)
 Book.create(title: "And Then There Were None", author: "Agatha Christie", likes: 0)
 
-Book.all.each do |book|
-    Review.create(text: all_reviews.sample, book_id: book.id)
-end
+# Book.all.each do |book|
+#     Review.create(text: all_reviews.sample, book_id: book.id)
+# end
 
+User.create(email: "ebenezar@gmail.com", name: "ebenezar", password: "1234")
+User.create(email: "diana@gmail.com", name: "diana", password: "1235")
+
+Review.create(text: 'best collection', book_id: 1, user_id: 1)
+Review.create(text: 'hard to understand', book_id: 2, user_id: 2)
+Review.create(text: 'hard to understand', book_id: 4, user_id: 2)
+Review.create(text: 'hard to understand', book_id: 3, user_id: 1)
+Review.create(text: 'hard to understand', book_id: 2, user_id: 1)
 
 
 puts "✅ Done seeding!"

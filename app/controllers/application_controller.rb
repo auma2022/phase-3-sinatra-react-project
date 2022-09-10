@@ -53,5 +53,13 @@ class ApplicationController < Sinatra::Base
     review.destroy
     review.to_json
   end
+  post '/user/login' do
+    user = User.find_by(name: params[:name], password: params[:password])
+    if user.nil?
+      response = {response: 'user not found'}.to_json
+    else 
+      user.to_json
+    end 
+  end
 
 end
